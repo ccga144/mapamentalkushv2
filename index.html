@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mapa mental do Kush</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon" style="border-radius: 20px;">
+    <script src="script/script.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Kush</h1>
+    <div id="box">
+    <div class="box" id="box1">
+        O reino de Kush era muito rico. Além de possuir minas de ouro e terras cultiváveis, ficava em uma ótima localização para realizar comércio com outros povos. Os cuchitas transportavam mercadorias pelo rio Nilo e também por estradas que levavam ao mar Vermelho.
+ 
+    </div>
+    <div class="box" id="box2">
+        Candace era um título atribuído a uma espécie de dinastia de rainhas guerreiras, mulheres guerreiras que detinham o poder do reino de Meroé, ao sul do Egito, pouco tempo antes da era cristã, formando uma sociedade matrilinear.
+    </div>
+    <div class="box" id="box3">
+        Os líderes  das comunidades  votavam naquele que consideravam  mais preparado para o cargo de rei.
+    </div>
+    <div class="box" id="box4">
+        Inicialmente, os núbios viviam como nômades, dedicando-se à caça, pesca e coleta de alimentos. Assim como os egípcios, eles desenvolveram ao longo do tempo técnicas para represar e canalizar as águas do Rio Nilo. Ao utilizarem esses recursos, tornaram-se sedentários.
+    </div>
+    <div class="box" id="box5">
+        As terras do Reino de Kush também eram ricas em metais, como o ferro e o ouro, e em pedras preciosas. Não se sabe ao certo quando a metalurgia se desenvolveu na região, porém foi no século IV a.C. que ela passou a ocorrer em grande escala. As atividades de mineração eram controladas pelo poder real cuxita, o que permitia aos governantes a manutenção de seus poderes e fortunas. O ouro, especialmente, era utilizado em trocas comerciais com Egito e Roma.
+    </div>
+</div>
+</body>
+<script>
+const box1 = document.getElementById('box1')
+const box2 = document.getElementById('box2')
+const box3 = document.getElementById('box3')
+const box4 = document.getElementById('box4')
+const box5 = document.getElementById('box5')
+box1.addEventListener('mouseenter', mouseenter)
+box2.addEventListener('mouseenter', mouseenter)
+box3.addEventListener('mouseenter', mouseenter)
+box4.addEventListener('mouseenter', mouseenter)
+box5.addEventListener('mouseenter', mouseenter)
+function mouseenter(event){
+    const varr = event.target
+    const eventt = varr.id
+    const evento = document.getElementById(eventt)
+    evento.style.transform = 'scale(1.1)'
+    evento.style.transition = 'all .5s'
+}
+box1.addEventListener('mouseleave', mouseleave)
+box2.addEventListener('mouseleave', mouseleave)
+box3.addEventListener('mouseleave', mouseleave)
+box4.addEventListener('mouseleave', mouseleave)
+box5.addEventListener('mouseleave', mouseleave)
+function mouseleave(event){
+    const varrr = event.target
+    const eventtt = varrr.id
+    const eventoo = document.getElementById(eventtt)
+    eventoo.style.transform = ''
+}
+
+</script>
+</html>
