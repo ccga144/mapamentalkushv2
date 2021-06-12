@@ -4,6 +4,11 @@ body{
     background-color: rgb(250, 255, 174);
     font-family: Arial, Helvetica, sans-serif;
 }
+h2, h3{
+    font-size: 1.0em;
+    font-weight: normal;
+
+}
 
 .box{
     max-width: 420px;
@@ -35,6 +40,17 @@ body{
     #box2, #box4{
         display: inline-block;
         margin-left: 14%;
+    }
+}
+@media (min-width: 1550px){
+    #box5{
+        display: inline-block;
+        margin-left: 34%;
+        
+    }
+    #box2, #box4{
+        display: inline-block;
+        margin-left: 34%;
     }
 }
 
