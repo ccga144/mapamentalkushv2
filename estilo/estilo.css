@@ -12,51 +12,27 @@ h2, h3{
 
 .box{
     max-width: 420px;
-    text-align: justify;
     padding: 20px;
     background-color: rgb(255, 194, 104);
     border-radius: 20px;
     cursor: default;
-    display: block;
-    margin: 50px auto;
+    margin: 50px;
+    min-width: 200px;
+    
+
 }
-@media (min-width:1100px){
-    #box1, #box3{
-        display: inline-block;
-        margin-left: 4%;
-        
-    }
-    #box2, #box4{
-        display: inline-block;
-        margin-left: 4%;
-    }
-}
-@media (min-width: 1250px){
-    #box5{
-        display: inline-block;
-        margin-left: 14%;
-        
-    }
-    #box2, #box4{
-        display: inline-block;
-        margin-left: 14%;
-    }
-}
-@media (min-width: 1550px){
-    #box5{
-        display: inline-block;
-        margin-left: 34%;
-        
-    }
-    #box2, #box4{
-        display: inline-block;
-        margin-left: 34%;
-    }
+#content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 8px;
 }
 
-@media (max-width: 506px){
+@media (min-width: 1100px){
+
     .box{
-        margin: 50px 30px;
+        display: inline-block;
     }
 }
-
